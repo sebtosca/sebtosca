@@ -1,103 +1,79 @@
 # Sebastien Toscano
 
-**AI Engineer** · Paris, France · Open to remote
+### AI Engineer · Paris, France · Open to Remote
+
+Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 ---
 
-## About
+# Tech Stack
 
-AI Engineer with a Master's in Artificial Intelligence from SKEMA Business 
-School and ESIEA School of Engineering (2025), with graduate research in 
-Automated Machine Learning. I specialize in building and shipping AI systems 
-end-to-end — from retrieval pipelines and LLM APIs to production infrastructure, 
-monitoring, and automated evaluation. My current focus is agentic system design: 
-building autonomous AI workflows with observability, tool use, and orchestration 
-patterns that hold up under real operating conditions.
+## AI / LLM
 
----
-
-## Projects
-
-### [Cortex — Financial Intelligence Retrieval Platform](https://github.com/sebtosca/Cortex-Production-Grade-Retrieval-and-Intelligence-Platform)
-
-Production-grade RAG platform built to demonstrate full AI systems engineering 
-depth: hybrid vector retrieval, async ingestion, distributed tracing, and 
-automated quality evaluation with a custom domain-specific metric.
-
-**Core finding:** hybrid retrieval + cross-encoder reranking at k=5 delivers 
-the same recall as k=20 at 40% of the latency cost. Capping the reranker at 
-k=5 reclaimed ~150ms per request — enough headroom to run a second-pass Claude 
-Sonnet verification on answers that score below the `financial_groundedness` 
-threshold.
-
-**Stack:** Claude Haiku 4.5 · bge-m3 · Qdrant (RRF hybrid search) · 
-CrossEncoder reranker · FastAPI + SSE · ARQ/Redis async ingestion · 
-PostgreSQL · OpenTelemetry → Jaeger · RAGAS + custom eval metric · 
-GitHub Actions CI quality gate
-
-**Retrieval benchmark (gold set):**
-
-| Strategy | Avg latency | Recall@5 |
-|---|---|---|
-| Dense only | 43ms | 0.712 |
-| Sparse only | 37ms | 0.684 |
-| Hybrid (RRF) | 52ms | 0.748 |
-| **Hybrid + rerank (k=5)** | **248ms** | **0.876** |
-
-**Evaluation (Claude Sonnet 4.6 as judge):**
-
-| Metric | Score | Threshold |
-|---|---|---|
-| Faithfulness | 0.875 | ≥ 0.70 |
-| Answer relevancy | 0.912 | ≥ 0.60 |
-| Context recall | 0.730 | ≥ 0.65 |
-| Financial groundedness | 0.900 | ≥ 0.80 |
-
-`financial_groundedness` is a custom metric: Claude Sonnet reviews each answer 
-against its retrieved passages and flags financial claims absent from or not 
-inferable from the context — targeting the hallucination failure mode specific 
-to financial documents.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-121212?style=for-the-badge)
+![LangGraph](https://img.shields.io/badge/LangGraph-5B21B6?style=for-the-badge)
+![LiteLLM](https://img.shields.io/badge/LiteLLM-0F172A?style=for-the-badge)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Agentic AI](https://img.shields.io/badge/Agentic-AI-DC2626?style=for-the-badge)
 
 ---
 
-### [Toxic Comment Classification](https://github.com/sebtosca/toxic-comment-classification)
+## Backend / Infrastructure
 
-Multi-label toxicity classifier with adversarial robustness evaluation. 
-Fine-tuned RoBERTa + LightGBM ensemble with explicit hardening against 
-text obfuscation attacks (backtranslation, synonym substitution, dynamic 
-threshold adjustment).
-
-**Stack:** PyTorch · RoBERTa · LightGBM · Scikit-learn · BERT embeddings
-
-**Results (fine-tuned RoBERTa):** F1 Macro 0.459 · ROC-AUC Macro 0.797 on 
-obfuscated test set — the harder evaluation target, not the clean baseline.
-
----
-
-## Stack
-
-**AI / LLM**
-Python · PyTorch · LangChain · LangGraph · LiteLLM · Claude API · 
-Hugging Face (bge-m3, RoBERTa, cross-encoders) · RAGAS
-
-**Retrieval / Evaluation**
-Qdrant · hybrid search (RRF) · cross-encoder reranking · 
-OpenTelemetry · Jaeger · custom eval metrics
-
-**Infra / Backend**
-FastAPI · Docker · Redis · PostgreSQL · ARQ · AWS · GCP · Scikit-learn
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ---
 
-## Currently
+## Retrieval / Evaluation / Observability
 
-**Building:** agentic systems with production-grade observability — tool 
-calling, orchestration, escalation handling, traceability across centralized 
-and decentralized agent topologies.
-
-**Learning:** production agentic system design · system design fundamentals 
-for AI infrastructure at scale.
+![Qdrant](https://img.shields.io/badge/Qdrant-FF6B6B?style=for-the-badge)
+![LangSmith](https://img.shields.io/badge/LangSmith-111827?style=for-the-badge)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
+![Jaeger](https://img.shields.io/badge/Jaeger-66CFE3?style=for-the-badge)
+![RAGAS](https://img.shields.io/badge/RAGAS-Evaluation-7C3AED?style=for-the-badge)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 
 ---
 
-*Open to AI Engineer roles · Paris, France · Remote*
+# Current Focus
+
+- Agentic AI systems
+- Multi-agent orchestration
+- Production RAG systems
+- AI infrastructure & observability
+- LLM evaluation pipelines
+
+---
+
+# Featured Repositories
+
+- 🔹 [Cortex — Financial Intelligence Platform](https://github.com/sebtosca/Cortex-Production-Grade-Retrieval-and-Intelligence-Platform)
+- 🔹 [AI Financial Research Agent](https://github.com/sebtosca/AI-Financial-Research-Agent)
+- 🔹 [Utility Swarm](https://github.com/sebtosca/utility-swarm)
+- 🔹 [Toxic Comment Classification](https://github.com/sebtosca/toxic-comment-classification)
+
+---
+
+# Connect
+
+- GitHub: https://github.com/sebtosca
+- LinkedIn: https://www.linkedin.com/in/sebastientoscano/
+
+---
+
+> *Build fast. Ship real systems.*
