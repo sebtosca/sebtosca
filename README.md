@@ -71,7 +71,6 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 # Connect
 
-- GitHub: https://github.com/sebtosca
 - LinkedIn: https://www.linkedin.com/in/sebastientoscano/
 
 ---
