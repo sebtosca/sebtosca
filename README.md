@@ -46,13 +46,11 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 ---
 
-# Current Focus
+# Current Focus (June 2026)
 
-- Agentic AI systems
-- Multi-agent orchestration
-- Production RAG systems
-- AI infrastructure & observability
-- LLM evaluation pipelines
+- Agentic AI systems (MAS) with RL policy optimization (ex: off-policy learning, exploration, credit assignment)
+- DSA & System Design
+- ETL Pipelines & Search Indexing (Spark, Elasticsearch)
 
 ---
 
