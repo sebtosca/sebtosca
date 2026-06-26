@@ -1,6 +1,6 @@
 # Sebastien Toscano
 
-### AI Engineer ·
+### AI Engineer
 
 Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
