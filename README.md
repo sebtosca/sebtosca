@@ -58,10 +58,8 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 # Featured Repositories
 
-- 🔹 [Cortex — Financial Intelligence Platform](https://github.com/sebtosca/Cortex-Production-Grade-Retrieval-and-Intelligence-Platform)
 - 🔹 [AI Financial Research Agent](https://github.com/sebtosca/AI-Financial-Research-Agent)
-- 🔹 [Utility Swarm](https://github.com/sebtosca/utility-swarm)
-- 🔹 [Toxic Comment Classification](https://github.com/sebtosca/toxic-comment-classification)
+- [Cortex — Financial Intelligence Platform](https://github.com/sebtosca/Cortex-Production-Grade-Retrieval-and-Intelligence-Platform)
 
 ---
 
