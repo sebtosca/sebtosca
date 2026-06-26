@@ -1,6 +1,6 @@
 # Sebastien Toscano
 
-### AI Engineer · Paris, France · Open to Remote
+### AI Engineer ·
 
 Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
