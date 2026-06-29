@@ -52,6 +52,9 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 - DSA & System Design
 - ETL Pipelines & Search Indexing (Spark, Elasticsearch)
 
+# Paper to read for this week (June - July):
+- https://github.com/alchaincyf/loop-engineering-orange-book 
+
 ---
 
 # Featured Repositories
