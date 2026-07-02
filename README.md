@@ -60,7 +60,7 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 # Featured Repositories
 
 - [AI Financial Research Agent](https://github.com/sebtosca/AI-Financial-Research-Agent)
-- [Cortex — Financial Intelligence Platform](https://github.com/sebtosca/Cortex-Production-Grade-Retrieval-and-Intelligence-Platform)
+- [Cortex — Financial Intelligence Platform](https://github.com/sebtosca/cortex-retrieval-platform)
 
 ---
 
