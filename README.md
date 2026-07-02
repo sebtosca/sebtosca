@@ -46,13 +46,13 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 ---
 
-# Current Focus (June 2026)
+# Current Focus (July 2026)
 
 - Agentic AI systems (MAS) with RL policy optimization (ex: off-policy learning, exploration, credit assignment)
 - DSA & System Design
 - ETL Pipelines & Search Indexing (Spark, Elasticsearch)
 
-# Paper to read for this week (June - July):
+# Paper to read for this week (July):
 - https://github.com/alchaincyf/loop-engineering-orange-book 
 
 ---
