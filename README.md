@@ -23,6 +23,8 @@ Building production-ready AI systems, RAG pipelines, and agentic workflows.
 
 📄 Paper of the week: [loop-engineering-orange-book](https://github.com/alchaincyf/loop-engineering-orange-book)
 
+📚 Recently read docs: [LangChain Docs](https://docs.langchain.com/)
+
 ---
 
 ### 🛠️ Tech Stack
