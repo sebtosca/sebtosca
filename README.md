@@ -2,7 +2,7 @@
 
 # Sebastien Toscano
 ### AI Engineer
-Building production-ready AI systems, RAG pipelines, and agentic workflows.
+Building production-ready AI systems, RAG pipelines, and agentic systems.
 
 <a href="https://www.linkedin.com/in/sebastientoscano/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
